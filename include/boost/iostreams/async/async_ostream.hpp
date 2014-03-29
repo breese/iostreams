@@ -73,8 +73,8 @@ namespace async_ostream {
 			sched_policy(policy_type t, duration polling_period = boost::posix_time::milliseconds(10)) : 
 				type_(t), polling_period_(polling_period) 
 			{}
-			duration polling_period_; 
 			policy_type type_;
+			duration polling_period_; 
 		};
 		stream(std::ostream& target, boost::asio::io_service& s, sched_policy p = sched_policy::default_policy, error_policy* ep = NULL);
 		stream(std::istream& target, boost::asio::io_service& s, sched_policy p = sched_policy::default_policy, error_policy* ep = NULL);
@@ -147,8 +147,8 @@ namespace async_ostream {
 		allocator(error_policy* ep);
 		~allocator();
 	private:
-		struct impl; impl* impl_;
 		std::size_t sequence_number_;
+		struct impl; impl* impl_;
 		friend class stream;
 		char* add(size_t size);
 	};

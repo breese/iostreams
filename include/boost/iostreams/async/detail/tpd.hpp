@@ -69,7 +69,7 @@ namespace async_ostream {
 		bool initialized() const { return inserter_ && consumer_; }
 
 		// the only way to initialize: ctor + delayed init(...)
-		tpd() : inserter_(NULL), consumer_(NULL), seq_no_generator_(1) {}
+		tpd() : seq_no_generator_(1), inserter_(NULL), consumer_(NULL) {}
 		// supply two memory locations where you have these buffer pages (you can place them in memory any way you like)
 		void init(buffer_type* buffer1, buffer_type* buffer2);
 
@@ -82,8 +82,8 @@ namespace async_ostream {
 			insert_transaction() : buffer_(0), parent_(0) {}
 			~insert_transaction() { commit(); }
 		private:
-			tpd* parent_;
 			buffer_type* buffer_;
+			tpd* parent_;
 		};
 
 		// transaction that the consumer thread should use
@@ -95,8 +95,8 @@ namespace async_ostream {
 			consume_transaction() : buffer_(0), parent_(0) {}
 			~consume_transaction() { commit(); }
 		private:
-			tpd* parent_;
 			buffer_type* buffer_;
+			tpd* parent_;
 		};
 
 		// will return the number of inserts that were performed that are not consumed yet (based on dirty reads though)
@@ -145,8 +145,8 @@ namespace async_ostream {
 		operator bool() const { return locked_; }
 		bool locked() const { return locked_; }
 	private:
-		bool locked_;
 		spinlock& target_;
+		bool locked_;
 	};
 
 	// inline implementations
