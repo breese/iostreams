@@ -1,4 +1,4 @@
-#include "aostream/h/async_ostream.hpp"
+#include <boost/iostreams/async/async_ostream.hpp>
 
 #include <boost/atomic.hpp>
 #include <boost/scoped_ptr.hpp>

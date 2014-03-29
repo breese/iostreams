@@ -1,4 +1,4 @@
-#include "asio_service_wrappers.hpp"
+#include <boost/iostreams/async/asio_service_wrappers.hpp>
 
 namespace async_ostream {
 

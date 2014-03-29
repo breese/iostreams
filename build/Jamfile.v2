@@ -155,6 +155,11 @@ if $(bz2)
     sources += boost_bzip2 bzip2.cpp ;
 }
 
+if 1
+{
+    sources += async_ostream.cpp async_ostream_services.cpp asio_service_wrappers.cpp ;
+}
+
 lib boost_iostreams 
     : $(sources) 
     : <link>shared:<define>BOOST_IOSTREAMS_DYN_LINK=1 

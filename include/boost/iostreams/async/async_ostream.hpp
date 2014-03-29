@@ -5,7 +5,7 @@
 #include <iostream>
 #include <boost/noncopyable.hpp>
 #include <boost/date_time/posix_time/posix_time_duration.hpp>
-#include "aostream/detail/tpd.hpp"
+#include <boost/iostreams/async/detail/tpd.hpp>
 // support of boost::exception
 #include <boost/exception/all.hpp>
 
@@ -209,6 +209,6 @@ namespace async_ostream {
 	};
 }
 
-#include "aostream/detail/async_ostream_impl.hpp"
+#include <boost/iostreams/async/detail/async_ostream_impl.hpp>
 
 #endif // ASYNC_OSTREAM

@@ -1,5 +1,5 @@
-#include "async_ostream.hpp"
-#include "asio_service_wrappers.hpp"
+#include <boost/iostreams/async/async_ostream.hpp>
+#include <boost/iostreams/async/asio_service_wrappers.hpp>
 
 #include <boost/smart_ptr/detail/spinlock.hpp>
 #include <boost/foreach.hpp>
