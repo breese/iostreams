@@ -1,5 +1,5 @@
-#ifndef ASYNC_OSTREAM
-#define ASYNC_OSTREAM
+#ifndef BOOST_IOSTREAMS_ASYNC_STREAM_HPP_INCLUDED
+#define BOOST_IOSTREAMS_ASYNC_STREAM_HPP_INCLUDED
 
 #include <cstring>
 #include <iostream>
@@ -211,4 +211,4 @@ namespace async_ostream {
 
 #include <boost/iostreams/async/detail/stream.ipp>
 
-#endif // ASYNC_OSTREAM
+#endif // BOOST_IOSTREAMS_ASYNC_STREAM_HPP_INCLUDED

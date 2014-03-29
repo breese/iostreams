@@ -1,3 +1,6 @@
+#ifndef BOOST_IOSTREAMS_ASYNC_ASIO_SERVICE_WRAPPERS_HPP_INCLUDED
+#define BOOST_IOSTREAMS_ASYNC_ASIO_SERVICE_WRAPPERS_HPP_INCLUDED
+
 #include <boost/iostreams/async/stream.hpp>
 
 #include <boost/atomic.hpp>
@@ -56,3 +59,5 @@ namespace async_ostream {
 		boost::atomic<size_t> draining_;
 	};
 }
+
+#endif // BOOST_IOSTREAMS_ASYNC_ASIO_SERVICE_WRAPPERS_HPP_INCLUDED

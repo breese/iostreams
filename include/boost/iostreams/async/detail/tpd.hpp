@@ -1,5 +1,5 @@
-#ifndef async_ostream_TPD
-#define async_ostream_TPD
+#ifndef BOOST_IOSTREAMS_ASYNC_DETAIL_TPD_HPP_INCLUDED
+#define BOOST_IOSTREAMS_ASYNC_DETAIL_TPD_HPP_INCLUDED
 
 #include <boost/smart_ptr/detail/spinlock.hpp>
 #include <boost/static_assert.hpp>
@@ -303,4 +303,4 @@ namespace async_ostream {
 
 }
 
-#endif // async_ostream_TPD
+#endif // BOOST_IOSTREAMS_ASYNC_DETAIL_TPD_HPP_INCLUDED

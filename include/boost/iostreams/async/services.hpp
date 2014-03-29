@@ -1,5 +1,5 @@
-#ifndef ASYNC_OSTREAM_SERVICES
-#define ASYNC_OSTREAM_SERVICES
+#ifndef BOOST_IOSTREAMS_ASYNC_SERVICES_HPP_INCLUDED
+#define BOOST_IOSTREAMS_ASYNC_SERVICES_HPP_INCLUDED
 
 #include <boost/iostreams/async/stream.hpp>
 #include <boost/date_time/posix_time/posix_time_duration.hpp>
@@ -60,4 +60,4 @@ namespace async_ostream {
 
 }
 
-#endif // ASYNC_OSTREAM_SERVICES
+#endif // BOOST_IOSTREAMS_ASYNC_SERVICES_HPP_INCLUDED

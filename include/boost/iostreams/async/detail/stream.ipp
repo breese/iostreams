@@ -1,3 +1,6 @@
+#ifndef BOOST_IOSTREAMS_ASYNC_DETAIL_STREAM_IPP_INCLUDED
+#define BOOST_IOSTREAMS_ASYNC_DETAIL_STREAM_IPP_INCLUDED
+
 // this file is only supposed to be included from async_ostream.hpp
 #pragma once
 
@@ -161,3 +164,6 @@ namespace async_ostream {
 	inline T* allocator::allocate_typed(size_t size) { return (T*)allocate(sizeof(T) * size); }
 
 }
+
+
+#endif // BOOST_IOSTREAMS_ASYNC_DETAIL_STREAM_IPP_INCLUDED
