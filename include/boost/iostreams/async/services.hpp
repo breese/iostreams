@@ -9,7 +9,7 @@
 #include <boost/iostreams/async/stream.hpp>
 #include <boost/date_time/posix_time/posix_time_duration.hpp>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 // this implementation gives you the lowest latency when you write into an async_ostream::stream
 class polling_service : public service {
@@ -63,6 +63,6 @@ protected:
     void work_available_impl() {}
 };
 
-}
+}}}
 
 #endif // BOOST_IOSTREAMS_ASYNC_SERVICES_HPP_INCLUDED

@@ -5,7 +5,7 @@
 
 #include <boost/iostreams/async/asio_service_wrappers.hpp>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 // if we are supposed to ensure no further work is scheduled
 struct asio_service_wrapper::set_stopped {
@@ -151,4 +151,4 @@ void asio_service_wrapper_low_power::work_available_impl() {
         s_.post(drain_all_buffers_once(this));
     }
 }
-}
+}}}

@@ -12,7 +12,7 @@
 #include <boost/noncopyable.hpp>
 #include <cassert>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 // TPD = two-page disruptor (because it only has two buffer pages, while the original LMAX disruptor would usually have more than two buffer pages)
 
@@ -306,6 +306,6 @@ inline void tpd<buffer_type>::switch_pages() {
     last_enqueued_sequence_number_ = consumer_->get_sequence_number(); 
 }
 
-}
+}}}
 
 #endif // BOOST_IOSTREAMS_ASYNC_DETAIL_TPD_HPP_INCLUDED

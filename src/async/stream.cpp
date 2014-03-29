@@ -15,7 +15,7 @@
 #include <boost/static_assert.hpp>
 BOOST_STATIC_ASSERT(sizeof(std::size_t) == sizeof(void*)); // allocator implementation depends on this assumption
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 typedef boost::detail::spinlock spinlock;
 
@@ -427,4 +427,4 @@ struct formatter<setstate_arg> : public formatter_base {
 void stream::setstate(std::ios_base::iostate state) {
     (*this) << setstate_arg(state);
 }
-}
+}}}

@@ -20,7 +20,7 @@ namespace boost { namespace asio { namespace detail {
 } } }
 //#include <boost/asio/buffer.hpp>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 inline char* stream::add(allocator& a, size_t size) { 
     return (char*)a.add(size); 
@@ -170,7 +170,6 @@ inline void stream::async_parse(r& reader, h handler) {
 template <typename T> 
 inline T* allocator::allocate_typed(size_t size) { return (T*)allocate(sizeof(T) * size); }
 
-}
-
+}}}
 
 #endif // BOOST_IOSTREAMS_ASYNC_DETAIL_STREAM_IPP_INCLUDED

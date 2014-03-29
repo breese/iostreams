@@ -12,7 +12,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/asio.hpp>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 // how we wrap a boost::asio::io_service into an async_ostream::service
 struct asio_service_wrapper : public service {
@@ -63,6 +63,6 @@ private:
     char padding_[64];
     boost::atomic<size_t> draining_;
 };
-}
+}}}
 
 #endif // BOOST_IOSTREAMS_ASYNC_ASIO_SERVICE_WRAPPERS_HPP_INCLUDED

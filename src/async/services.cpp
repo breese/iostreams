@@ -6,7 +6,7 @@
 #include <boost/iostreams/async/services.hpp>
 #include <boost/thread.hpp>
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 struct service_impl : boost::noncopyable 
 {
@@ -141,4 +141,4 @@ void waiting_service::join() {
                               boost::posix_time::milliseconds(10)); // just in case (and because on some platforms boost::thread::join does not guarantee that the other thread is out of post-execution cleanup)
 }
 
-}
+}}}

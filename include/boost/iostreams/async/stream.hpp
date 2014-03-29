@@ -17,7 +17,7 @@
 // what's needed for compatibility with boost::asio::async_write
 namespace boost { namespace asio { class io_service; } }
 
-namespace async_ostream {
+namespace boost { namespace iostreams { namespace async {
 
 // three classes that form async_ostream
 class stream;
@@ -212,7 +212,7 @@ template <size_t size>
 struct formatter<const char[size]> : public formatter<const char*> {
     formatter(const char (&formattable)[size], allocator& alloc) : formatter<const char*>(&formattable[0], alloc) {}
 };
-}
+}}}
 
 #include <boost/iostreams/async/detail/stream.ipp>
 
