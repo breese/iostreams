@@ -7,7 +7,9 @@
 #define BOOST_IOSTREAMS_ASYNC_DETAIL_STREAM_IPP_INCLUDED
 
 // this file is only supposed to be included from async_ostream.hpp
+#if defined(_MSC_VER)
 #pragma once
+#endif
 
 #include <boost/system/error_code.hpp>
 #include <boost/ref.hpp>
