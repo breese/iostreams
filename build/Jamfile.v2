@@ -157,7 +157,7 @@ if $(bz2)
 
 if 1
 {
-    sources += async_ostream.cpp async_ostream_services.cpp asio_service_wrappers.cpp ;
+    sources += async/stream.cpp async/services.cpp async/asio_service_wrappers.cpp ;
 }
 
 lib boost_iostreams 

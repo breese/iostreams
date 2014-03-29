@@ -1,4 +1,4 @@
-#include <boost/iostreams/async/async_ostream_services.hpp>
+#include <boost/iostreams/async/services.hpp>
 #include <boost/thread.hpp>
 
 namespace async_ostream {

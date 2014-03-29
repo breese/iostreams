@@ -1,7 +1,7 @@
 #ifndef ASYNC_OSTREAM_SERVICES
 #define ASYNC_OSTREAM_SERVICES
 
-#include <boost/iostreams/async/async_ostream.hpp>
+#include <boost/iostreams/async/stream.hpp>
 #include <boost/date_time/posix_time/posix_time_duration.hpp>
 
 namespace async_ostream {

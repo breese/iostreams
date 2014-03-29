@@ -209,6 +209,6 @@ namespace async_ostream {
 	};
 }
 
-#include <boost/iostreams/async/detail/async_ostream_impl.hpp>
+#include <boost/iostreams/async/detail/stream.ipp>
 
 #endif // ASYNC_OSTREAM

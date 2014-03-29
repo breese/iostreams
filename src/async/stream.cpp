@@ -1,4 +1,4 @@
-#include <boost/iostreams/async/async_ostream.hpp>
+#include <boost/iostreams/async/stream.hpp>
 #include <boost/iostreams/async/asio_service_wrappers.hpp>
 
 #include <boost/smart_ptr/detail/spinlock.hpp>
